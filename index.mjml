@@ -1,0 +1,108 @@
+<mjml version="4.4.0">
+	<mj-head>
+		<mj-title>E-Mail Template</mj-title>
+		<mj-attributes>
+			<mj-all font-family="Helvetica,Arial,sans-serif" text-decoration="none" />
+			<mj-text padding="0" />
+			<mj-image padding="0" />
+			<mj-class name="headline-big" align="left" font-size="30px" line-height="36px" color="#003584" padding="0" />
+		</mj-attributes>
+		<mj-style>
+			a { text-decoration: none !important; }
+			a[href^=tel] { color: inherit; text-decoration: none; }
+
+			h1, h2, h3, p {
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+
+			@media all and (max-width: 480px) {
+				.wrapper > table > tbody > tr > td { padding: 30px !important; }
+			}
+		</mj-style>
+	</mj-head>
+	<mj-body background-color="#F5F5F5" color="#525252" width="640px">
+
+		<mj-spacer height="20px" />
+
+		<!-- Pre-Line -->
+		<mj-section css-class="preline" background-color="#F5F5F5" padding="20px 0" text-align="center" vertical-align="top">
+			<mj-column>
+				<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="11px" line-height="18px">
+					<p style="margin-bottom: 0;">
+						Sie können diese E-Mail nicht sehen? <a href="https://mjml.io/" target="_blank" style="border:none; color:#FF5722; display:inline; font-size:11px; font-weight:300; outline:none!important; text-decoration:underline !important;">Klicken Sie hier</a>
+					</p>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+
+
+		<!-- Wrapper -->
+		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center" vertical-align="top" border="0">
+
+			<!-- Header Image -->
+			<mj-section background-color="#ffffff" padding="0" text-align="center" vertical-align="top">
+				<mj-column>
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="165" height="55" src="https://via.placeholder.com/120x60?text=Logo"></mj-image>
+					<mj-spacer height="40px" />
+				</mj-column>
+			</mj-section>
+
+
+			<!-- Main Content -->
+			<mj-section background-color="#ffffff" padding="0" text-align="center" vertical-align="top">
+				<mj-column>
+					<mj-text color="#525252" font-size="15px" line-height="23px">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</mj-text>
+
+					<mj-spacer height="25px" />
+
+					<mj-button css-class="button" align="left" background-color="#FF5722" color="#fff" padding="0" inner-padding="14px 40px" font-size="16px" line-height="22px" href="#">Button-Text</mj-button>
+
+					<mj-spacer height="40px" />
+
+					<mj-text color="#525252" font-size="15px" line-height="23px">
+						<h1>Headline h1</h1>
+						<h2>Headline h2</h2>
+						<h3>Headline h3</h3>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+		</mj-wrapper>
+
+
+		<!-- Footer -->
+		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 60px 40px 60px" text-align="center" vertical-align="top">
+			<mj-section padding="0">
+				<mj-column>
+					<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="12px" line-height="18px">
+						<p>
+							Hier steht Footer-Text.
+							<br />
+							<a href="https://mjml.io/" target="_blank" style="border:none; color:#b7b7b7; display:block; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">www.mjml.io</a>
+						</p>
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+			<mj-section padding="0">
+				<mj-column>
+					<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="12px" line-height="18px">
+						<p style="margin-bottom: 0;">
+							<a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Impressum</a> · <a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Datenschutz</a> · <a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Newsletter abbestellen</a>
+						</p>
+					</mj-text>
+				</mj-column>
+			</mj-section>
+
+		</mj-wrapper>
+
+	</mj-body>
+</mjml>
