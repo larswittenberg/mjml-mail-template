@@ -2,6 +2,8 @@
 
 E-Mail / Newletter Template auf Basis von [mjml.io](https://mjml.io/)
 
+![alt text](Screenshot.png "Screenshot")
+
 
 ## Eingesetzte Tools
 * [mjml.io](https://mjml.io/) (Version 4)
