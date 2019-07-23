@@ -2,7 +2,7 @@
 
 E-Mail / Newletter Template auf Basis von [mjml.io](https://mjml.io/)
 
-![alt text](Screenshot.png "Screenshot")
+![alt text](https://raw.githubusercontent.com/larswittenberg/mjml-mail-template/master/screenshot.png "Screenshot")
 
 
 ## Eingesetzte Tools
