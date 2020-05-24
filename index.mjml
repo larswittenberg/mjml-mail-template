@@ -1,4 +1,4 @@
-<mjml version="4.6.3">
+<mjml version="4.6.3" lang="de">
 	<mj-head>
 		<mj-title>E-Mail Template</mj-title>
 		<mj-attributes>
@@ -21,14 +21,7 @@
 			}
 		</mj-style>
 	</mj-head>
-	<mj-body background-color="#F5F5F5" width="640px">
-
-		<!-- Top Spacer -->
-		<mj-section background-color="#F9F9F9" padding="0" text-align="center">
-			<mj-column>
-				<mj-spacer height="20px" />
-			</mj-column>
-		</mj-section>
+	<mj-body background-color="#F5F5F5" width="600px">
 
 		<!-- Pre-Line -->
 		<mj-section css-class="preline" background-color="#F5F5F5" padding="20px 0" text-align="center">
@@ -43,7 +36,7 @@
 
 
 		<!-- Wrapper -->
-		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center" border="0">
+		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center"border="1px solid #ddd"border="1px solid #ddd">
 
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
@@ -57,7 +50,7 @@
 			<!-- Main Content -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
-					<mj-text color="#525252" font-size="15px" line-height="23px">
+					<mj-text color="#333" font-size="15px" line-height="23px">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
@@ -69,7 +62,9 @@
 
 					<mj-spacer height="40px" />
 
-					<mj-text color="#525252" font-size="15px" line-height="23px">
+					<mj-divider border-width="1px" border-style="solid" border-color="#ccc" />
+
+					<mj-text color="#333" font-size="15px" line-height="23px">
 						<h1>Headline h1</h1>
 						<h2>Headline h2</h2>
 						<h3>Headline h3</h3>
@@ -77,6 +72,10 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</mj-text>
+
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" src="https://picsum.photos/1200/800"></mj-image>
+
+
 				</mj-column>
 			</mj-section>
 
