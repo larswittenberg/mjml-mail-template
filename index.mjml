@@ -28,7 +28,7 @@
 		<!-- Pre-Line -->
 		<mj-section css-class="preline" background-color="#F5F5F5" padding="20px 0" text-align="center" vertical-align="top">
 			<mj-column>
-				<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="11px" line-height="18px">
+				<mj-text align="center" color="#666" font-weight="300" font-size="11px" line-height="18px">
 					<p style="margin-bottom: 0;">
 						Sie können diese E-Mail nicht sehen? <a href="https://mjml.io/" target="_blank" style="border:none; color:#FF5722; display:inline; font-size:11px; font-weight:300; outline:none!important; text-decoration:underline !important;">Klicken Sie hier</a>
 					</p>
@@ -43,7 +43,7 @@
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center" vertical-align="top">
 				<mj-column>
-					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="165" height="55" src="https://via.placeholder.com/120x60?text=Logo"></mj-image>
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="120px" height="60px" src="https://via.placeholder.com/120x60?text=Logo"></mj-image>
 					<mj-spacer height="40px" />
 				</mj-column>
 			</mj-section>
@@ -82,11 +82,11 @@
 		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 60px 40px 60px" text-align="center" vertical-align="top">
 			<mj-section padding="0">
 				<mj-column>
-					<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="12px" line-height="18px">
+					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">
 						<p>
 							Hier steht Footer-Text.
 							<br />
-							<a href="https://mjml.io/" target="_blank" style="border:none; color:#b7b7b7; display:block; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">www.mjml.io</a>
+							<a href="https://mjml.io/" target="_blank" style="border:none; color:#666; display:block; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">www.mjml.io</a>
 						</p>
 					</mj-text>
 				</mj-column>
@@ -94,9 +94,9 @@
 
 			<mj-section padding="0">
 				<mj-column>
-					<mj-text align="center" color="#b7b7b7" font-weight="300" font-size="12px" line-height="18px">
+					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">
 						<p style="margin-bottom: 0;">
-							<a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Impressum</a> · <a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Datenschutz</a> · <a href="#" target="_blank" style="border:none; color:#b7b7b7; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Newsletter abbestellen</a>
+							<a href="#" target="_blank" style="border:none; color:#666; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Impressum</a> · <a href="#" target="_blank" style="border:none; color:#666; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Datenschutz</a> · <a href="#" target="_blank" style="border:none; color:#666; display:inlne; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">Newsletter abbestellen</a>
 						</p>
 					</mj-text>
 				</mj-column>
