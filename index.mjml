@@ -21,12 +21,17 @@
 			}
 		</mj-style>
 	</mj-head>
-	<mj-body background-color="#F5F5F5" color="#525252" width="640px">
+	<mj-body background-color="#F5F5F5" width="640px">
 
-		<mj-spacer height="20px" />
+		<!-- Top Spacer -->
+		<mj-section background-color="#F9F9F9" padding="0" text-align="center">
+			<mj-column>
+				<mj-spacer height="20px" />
+			</mj-column>
+		</mj-section>
 
 		<!-- Pre-Line -->
-		<mj-section css-class="preline" background-color="#F5F5F5" padding="20px 0" text-align="center" vertical-align="top">
+		<mj-section css-class="preline" background-color="#F5F5F5" padding="20px 0" text-align="center">
 			<mj-column>
 				<mj-text align="center" color="#666" font-weight="300" font-size="11px" line-height="18px">
 					<p style="margin-bottom: 0;">
@@ -38,10 +43,10 @@
 
 
 		<!-- Wrapper -->
-		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center" vertical-align="top" border="0">
+		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center" border="0">
 
 			<!-- Header Image -->
-			<mj-section background-color="#ffffff" padding="0" text-align="center" vertical-align="top">
+			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
 					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="120px" height="60px" src="https://via.placeholder.com/120x60?text=Logo"></mj-image>
 					<mj-spacer height="40px" />
@@ -50,7 +55,7 @@
 
 
 			<!-- Main Content -->
-			<mj-section background-color="#ffffff" padding="0" text-align="center" vertical-align="top">
+			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
 					<mj-text color="#525252" font-size="15px" line-height="23px">
 						<p>
@@ -79,7 +84,7 @@
 
 
 		<!-- Footer -->
-		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 60px 40px 60px" text-align="center" vertical-align="top">
+		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 60px 40px 60px" text-align="center">
 			<mj-section padding="0">
 				<mj-column>
 					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">

@@ -33,3 +33,7 @@ Installiertes Node.js und yarn (bzw. npm) sowie globales Gulp und Browser-Sync
 `$ gulp watch` startet lokalen Browser-Sync-Server
 
 Beim speichern der mjml Datei wird die Seite im Browser automatisch neu geladen.
+
+## Alternativ: mjml CLI
+
+`$ mjml -w index.mjml`
