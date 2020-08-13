@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const mjml = require('gulp-mjml');
+const mjmlEngine = require('mjml');
 const browserSync  = require('browser-sync').create();
 
 
@@ -20,12 +21,18 @@ function serve(done) {
 }
 
 
+function handleError (err) {
+	console.log(err.toString());
+	this.emit('end');
+}
+
 // Build MJML
 function buildmjml() {
 	return (
 		gulp
 			.src('src/*.mjml')
-			.pipe(mjml())
+			.pipe(mjml(mjmlEngine, {validationLevel: 'strict'}))
+			.on('error', handleError)
 			.pipe(gulp.dest('./dist'))
 	);
 }
