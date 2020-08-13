@@ -9,6 +9,7 @@
 		</mj-attributes>
 		<mj-style>
 			a { text-decoration: none !important; }
+
 			a[href^=tel] { color: inherit; text-decoration: none; }
 
 			h1, h2, h3, p {
@@ -41,7 +42,7 @@
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
-					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="120px" height="60px" src="https://via.placeholder.com/120x60?text=Logo"></mj-image>
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="300px" height="75px" src="assets/logo.png"></mj-image>
 					<mj-spacer height="40px" />
 				</mj-column>
 			</mj-section>
