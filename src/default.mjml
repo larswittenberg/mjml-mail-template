@@ -18,7 +18,12 @@
 			}
 
 			@media all and (max-width: 480px) {
-				.wrapper > table > tbody > tr > td { padding: 30px !important; }
+				.wrapper > table > tbody > tr > td { padding: 20px !important; }
+				.footer > table > tbody > tr > td { padding: 20px !important; }
+			}
+
+			@media all and (min-width: 480px) {
+				.hide-on-desktop { display: none !important; }
 			}
 		</mj-style>
 	</mj-head>
@@ -36,7 +41,7 @@
 		</mj-section>
 
 
-		<!-- Wrapper -->
+		<!-- Main-Wrapper -->
 		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center"border="1px solid #ddd"border="1px solid #ddd">
 
 			<!-- Header Image -->
@@ -76,15 +81,14 @@
 
 					<mj-image align="center" alt="Logo" container-background-color="#ffffff" src="https://picsum.photos/1200/800"></mj-image>
 
-
 				</mj-column>
-			</mj-section>
+			</mj-section><!-- / Ende Main-Content -->
 
-		</mj-wrapper>
+		</mj-wrapper><!-- / Ende Main-Wrapper -->
 
 
 		<!-- Footer -->
-		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 60px 40px 60px" text-align="center">
+		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 40px" text-align="center">
 			<mj-section padding="0">
 				<mj-column>
 					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">
@@ -106,8 +110,7 @@
 					</mj-text>
 				</mj-column>
 			</mj-section>
-
-		</mj-wrapper>
+		</mj-wrapper><!-- / Ende Footer-Wrapper -->
 
 	</mj-body>
 </mjml>
