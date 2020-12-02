@@ -92,9 +92,16 @@
 			<mj-section padding="0">
 				<mj-column>
 					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">
-						<p>
+						<p style="margin-bottom: 10px;">
 							Hier steht Footer-Text.
 							<br />
+							Wenn hier eine PLZ 12345 oder eine USt-ID DE 123456789 steht, wird diese teilweise beim Versand in den E-Mail Clients als Telefonnummer bzw. als Link formatiert.
+							<br />
+							Trick um dies zu beheben: Bindehemmer. Mit einem s. g. 'Zero-Width Non-Joiner' zwischen den Ziffern, kann diese Formatierung aufgehoben werden.
+							<br />
+							Hier steht eine PLZ 12&zwnj;34&zwnj;5 und eine USt-ID DE 123&zwnj;456&zwnj;789.
+						</p>
+						<p style="margin-bottom: 10px;">
 							<a href="https://mjml.io/" target="_blank" style="border:none; color:#666; display:block; font-size:12px; font-weight:300; outline:none!important; text-decoration:underline;">www.mjml.io</a>
 						</p>
 					</mj-text>
