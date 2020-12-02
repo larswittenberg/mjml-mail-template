@@ -11,6 +11,10 @@ const paths = {
 		src: 'src/**/*.mjml',
 		dest: 'dist/'
 	},
+	html: {
+		src: 'src/**/*.html',
+		dest: 'dist/'
+	},
 	assets: {
 		src: 'src/assets/**/*.*',
 		dest: 'dist/assets/'
@@ -41,6 +45,16 @@ function clean() {
 }
 
 
+// TASK: Copy HTML
+function copyhtml() {
+	return (
+		gulp
+			.src(paths.html.src)
+			.pipe(gulp.dest(paths.html.dest))
+	);
+}
+
+
 // TASK: Copy Assets
 function copyassets() {
 	return (
@@ -63,7 +77,7 @@ function mjmlTask() {
 	return (
 		gulp
 			.src(paths.mjml.src)
-			.pipe(mjml(mjmlEngine, {validationLevel: 'strict'}))
+			.pipe(mjml(mjmlEngine, {validationLevel: 'strict', minify: true}))
 			.on('error', handleError)
 			.pipe(gulp.dest(paths.mjml.dest))
 	);
@@ -73,10 +87,11 @@ exports.mjmlTask = mjmlTask;
 
 // TASK: Watch
 function watch() {
-	gulp.watch('src/**/*.mjml', mjmlTask).on('change', reload);
+	gulp.watch(paths.mjml.src, mjmlTask).on('change', reload);
+	gulp.watch(paths.html.src, copyhtml).on('change', reload);
 	gulp.watch(paths.assets.src, copyassets).on('change', reload);
 }
 exports.watch = watch;
 
 
-exports.watch = gulp.series(clean, mjmlTask, copyassets, serve, watch);
+exports.watch = gulp.series(clean, mjmlTask, copyhtml, copyassets, serve, watch);
