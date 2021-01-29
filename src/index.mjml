@@ -47,7 +47,7 @@
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
-					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="300px" height="75px" src="assets/logo.png"></mj-image>
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" width="270px" height="35px" src="assets/logo.png"></mj-image>
 					<mj-spacer height="40px" />
 				</mj-column>
 			</mj-section>
@@ -68,14 +68,24 @@
 
 					<mj-spacer height="40px" />
 
-					<mj-divider border-width="1px" border-style="solid" border-color="#ccc" />
-
 					<mj-text color="#333" font-size="15px" line-height="23px">
 						<h1>Headline h1</h1>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id corrupti maxime similique quisquam sunt quis vero culpa awesome ipsum ullam vel odit eligendi, quo illum, aliquid sequi quae. Possimus, dignissimos!
+						</p>
+
 						<h2>Headline h2</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id corrupti maxime similique quisquam sunt quis vero culpa awesome ipsum ullam vel odit eligendi, quo illum, aliquid sequi quae. Possimus, dignissimos!
+						</p>
+
 						<h3>Headline h3</h3>
 						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id corrupti maxime similique quisquam sunt quis vero culpa awesome ipsum ullam vel odit eligendi, quo illum, aliquid sequi quae. Possimus, dignissimos!
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</mj-text>
 
