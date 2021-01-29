@@ -11,10 +11,6 @@ const paths = {
 		src: 'src/**/*.mjml',
 		dest: 'dist/'
 	},
-	html: {
-		src: 'src/**/*.html',
-		dest: 'dist/'
-	},
 	assets: {
 		src: 'src/assets/**/*.*',
 		dest: 'dist/assets/'
@@ -44,15 +40,6 @@ function clean() {
 	return del(['dist']);
 }
 
-
-// TASK: Copy HTML
-function copyhtml() {
-	return (
-		gulp
-			.src(paths.html.src)
-			.pipe(gulp.dest(paths.html.dest))
-	);
-}
 
 
 // TASK: Copy Assets
@@ -88,10 +75,9 @@ exports.mjmlTask = mjmlTask;
 // TASK: Watch
 function watch() {
 	gulp.watch(paths.mjml.src, mjmlTask).on('change', reload);
-	gulp.watch(paths.html.src, copyhtml).on('change', reload);
 	gulp.watch(paths.assets.src, copyassets).on('change', reload);
 }
 exports.watch = watch;
 
 
-exports.watch = gulp.series(clean, mjmlTask, copyhtml, copyassets, serve, watch);
+exports.watch = gulp.series(clean, mjmlTask, copyassets, serve, watch);
