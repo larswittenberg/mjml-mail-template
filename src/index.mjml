@@ -3,7 +3,7 @@
 		<mj-title>E-Mail / Newletter Template auf Basis von mjml.io</mj-title>
 		<mj-preview>E-Mail / Newletter Template auf Basis von mjml.io</mj-preview>
 		<mj-attributes>
-			<mj-all font-family="Helvetica,Arial,sans-serif" text-decoration="none" />
+			<mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" text-decoration="none" />
 			<mj-text color="#333" font-size="15px" line-height="23px" padding="0" />
 			<mj-image padding="0" />
 			<mj-class name="headline-big" align="left" font-size="30px" line-height="36px" color="#003584" padding="0" />
@@ -43,7 +43,7 @@
 
 
 		<!-- Main-Wrapper -->
-		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="20px" text-align="center"border="1px solid #ddd"border="1px solid #ddd">
+		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="20px" text-align="center" border="1px solid #ddd">
 
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
