@@ -1,13 +1,14 @@
-<mjml version="4.6.3" lang="de">
+<mjml version="4.13.0" lang="de">
 	<mj-head>
-		<mj-title>E-Mail Template</mj-title>
+		<mj-title>E-Mail / Newletter Template auf Basis von mjml.io</mj-title>
+		<mj-preview>E-Mail / Newletter Template auf Basis von mjml.io</mj-preview>
 		<mj-attributes>
 			<mj-all font-family="Helvetica,Arial,sans-serif" text-decoration="none" />
-			<mj-text padding="0" />
+			<mj-text color="#333" font-size="15px" line-height="23px" padding="0" />
 			<mj-image padding="0" />
 			<mj-class name="headline-big" align="left" font-size="30px" line-height="36px" color="#003584" padding="0" />
 		</mj-attributes>
-		<mj-style>
+		<mj-style inline="inline">
 			a { text-decoration: none !important; }
 
 			a[href^=tel] { color: inherit; text-decoration: none; }
@@ -42,7 +43,7 @@
 
 
 		<!-- Main-Wrapper -->
-		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="40px" text-align="center"border="1px solid #ddd"border="1px solid #ddd">
+		<mj-wrapper css-class="wrapper" background-color="#ffffff" padding="20px" text-align="center"border="1px solid #ddd"border="1px solid #ddd">
 
 			<!-- Header Image -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
@@ -56,7 +57,7 @@
 			<!-- Main Content -->
 			<mj-section background-color="#ffffff" padding="0" text-align="center">
 				<mj-column>
-					<mj-text color="#333" font-size="15px" line-height="23px">
+					<mj-text>
 						<p>
 							E-Mail / Newletter Template auf Basis von  <a href="https://mjml.io/" target="_blank" style="border:none; color:#FF5722; display:inline; outline:none!important; text-decoration:underline !important;">mjml.io</a>
 						</p>
@@ -71,7 +72,7 @@
 
 					<mj-spacer height="40px" />
 
-					<mj-text color="#333" font-size="15px" line-height="23px">
+					<mj-text>
 						<h1>Headline h1</h1>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id corrupti maxime similique quisquam sunt quis vero culpa awesome ipsum ullam vel odit eligendi, quo illum, aliquid sequi quae. Possimus, dignissimos!
@@ -92,7 +93,7 @@
 						</p>
 					</mj-text>
 
-					<mj-image align="center" alt="Logo" container-background-color="#ffffff" src="https://picsum.photos/1200/800"></mj-image>
+					<mj-image align="center" alt="Logo" container-background-color="#ffffff" src="https://picsum.photos/1200/800/"></mj-image>
 
 				</mj-column>
 			</mj-section><!-- / Ende Main-Content -->
@@ -101,7 +102,7 @@
 
 
 		<!-- Footer -->
-		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px 40px" text-align="center">
+		<mj-wrapper css-class="footer" background-color="#F5F5F5" padding="20px" text-align="center">
 			<mj-section padding="0">
 				<mj-column>
 					<mj-text align="center" color="#666" font-weight="300" font-size="12px" line-height="18px">
