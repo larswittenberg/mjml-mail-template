@@ -4,6 +4,10 @@ E-Mail / Newletter Template auf Basis von [mjml.io](https://mjml.io/)
 
 ![alt text](https://raw.githubusercontent.com/larswittenberg/mjml-mail-template/master/screenshot.png?v2 "Screenshot")
 
+## Alternative Nutzung in VS Code
+
+Über das [MJML Plugin](https://marketplace.visualstudio.com/items?itemName=mjmlio.vscode-mjml) für VS Code direkt eine Live Preview im Editor sehen und eine HTML Datei exportieren lassen.
+
 ## Eingesetzte Tools
 
 * [mjml.io](https://mjml.io/) (Version 4)
