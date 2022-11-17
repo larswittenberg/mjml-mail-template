@@ -2,7 +2,9 @@
 
 E-Mail / Newletter Template auf Basis von [mjml.io](https://mjml.io/)
 
-![alt text](https://raw.githubusercontent.com/larswittenberg/mjml-mail-template/master/screenshot.png?v2 "Screenshot")
+![alt text](https://raw.githubusercontent.com/larswittenberg/mjml-mail-template/master/staticfiles/screenshot-1.jpg "Screenshot 1")
+
+![alt text](https://raw.githubusercontent.com/larswittenberg/mjml-mail-template/master/staticfiles/screenshot-2.jpg "Screenshot 2")
 
 ## Alternative Nutzung in VS Code
 

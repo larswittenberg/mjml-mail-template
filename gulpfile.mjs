@@ -17,6 +17,10 @@ const paths = {
 		src: 'src/assets/**/*.*',
 		dest: 'dist/assets/'
 	},
+	staticfiles: {
+		src: ['staticfiles/index.html', 'staticfiles/screenshot-1.jpg', 'staticfiles/screenshot-2.jpg'],
+		dest: 'dist/'
+	},
 };
 
 
@@ -59,6 +63,17 @@ function copyassets() {
 
 
 
+// TASK: Copy static files
+function copystaticfiles() {
+	return (
+		gulp
+			.src(paths.staticfiles.src)
+			.pipe(gulp.dest(paths.staticfiles.dest))
+	);
+}
+
+
+
 // MJML Validation Error
 function handleError (err) {
 	console.log(err.toString());
@@ -83,8 +98,9 @@ function mjmlTask() {
 function watch() {
 	gulp.watch(paths.mjml.src, mjmlTask).on('change', reload);
 	gulp.watch(paths.assets.src, copyassets).on('change', reload);
+	gulp.watch(paths.staticfiles.src, copystaticfiles).on('change', reload);
 }
 
 
 
-export default series(clean, copyassets, mjmlTask, serve, watch);
+export default series(clean, copyassets, copystaticfiles, mjmlTask, serve, watch);
