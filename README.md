@@ -21,14 +21,14 @@ Installiertes Node.js und yarn (bzw. npm) sowie globales Gulp und Browser-Sync
 
 ## Installation
 
-`$ yarn` installiert die benötigten Packages (oder `$ npm install`)
+`yarn install` installiert die benötigten Packages (oder `npm install`)
 
 ## Benutzung
 
-`$ gulp watch` startet lokalen Browser-Sync-Server
+`yarn dev` startet lokalen Browser-Sync-Server
 
-Beim speichern der mjml-Datei im `src`Ordner wird die Seite im Browser automatisch neu geladen.
+Beim speichern der mjml-Datei im `src`-Ordner wird die Seite im Browser automatisch neu geladen.
 
 ## Alternativ: mjml CLI
 
-`$ mjml -w src/index.mjml`
+`mjml -w src/index.mjml`

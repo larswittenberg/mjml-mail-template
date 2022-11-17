@@ -1,8 +1,10 @@
-const gulp = require('gulp');
-const mjml = require('gulp-mjml');
-const mjmlEngine = require('mjml');
-const del = require('del');
-const browserSync  = require('browser-sync').create();
+import gulp from 'gulp';
+import mjml from 'gulp-mjml';
+import mjmlEngine from 'mjml';
+import { deleteAsync } from 'del';
+import browserSync from 'browser-sync';
+
+const { series } = gulp;
 
 
 // Path Variables
@@ -18,6 +20,7 @@ const paths = {
 };
 
 
+
 // BrowserSync: Serve
 function serve(done) {
 	browserSync.init({
@@ -29,16 +32,19 @@ function serve(done) {
 }
 
 
+
 // BrowserSync: Reload Browser
 function reload() {
 	browserSync.reload();
 }
 
 
+
 // TASK: Clean Assets
 function clean() {
-	return del(['dist']);
+	return deleteAsync(['dist']);
 }
+
 
 
 
@@ -50,6 +56,7 @@ function copyassets() {
 			.pipe(gulp.dest(paths.assets.dest))
 	);
 }
+
 
 
 // MJML Validation Error
@@ -64,12 +71,12 @@ function mjmlTask() {
 	return (
 		gulp
 			.src(paths.mjml.src)
-			.pipe(mjml(mjmlEngine, {validationLevel: 'strict', minify: true}))
+			.pipe(mjml(mjmlEngine, {validationLevel: 'strict'}))
 			.on('error', handleError)
 			.pipe(gulp.dest(paths.mjml.dest))
 	);
 }
-exports.mjmlTask = mjmlTask;
+
 
 
 // TASK: Watch
@@ -77,7 +84,7 @@ function watch() {
 	gulp.watch(paths.mjml.src, mjmlTask).on('change', reload);
 	gulp.watch(paths.assets.src, copyassets).on('change', reload);
 }
-exports.watch = watch;
 
 
-exports.watch = gulp.series(clean, mjmlTask, copyassets, serve, watch);
+
+export default series(clean, copyassets, mjmlTask, serve, watch);
