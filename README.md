@@ -17,7 +17,7 @@ E-Mail / Newletter Template auf Basis von [mjml.io](https://mjml.io/)
 * [gulp-mjml](https://www.npmjs.com/package/gulp-mjml)
 * [Browser-Sync](https://www.browsersync.io/)
 
-## Vorraussetzung
+## Voraussetzung
 
 Installiertes Node.js und yarn (bzw. npm) sowie globales Gulp und Browser-Sync
 
